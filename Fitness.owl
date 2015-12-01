@@ -1,0 +1,812 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/fahziar/ontologies/2015/10/fitness"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/fahziar/ontologies/2015/10/fitness">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Aerobik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anaerobik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DetakJantung"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intensitas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JenisKelamin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kondisi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KonsumsiKalori"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManfaatBagiTubuh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MembangunOtot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Penyembuhan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rendah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sedang"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TekananDarah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tinggi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Training"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tujuan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Umur"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dicapaiDengan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ditentukanOleh"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mencapai"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#menentukan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Berenang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bersepeda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Burpees"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CrossFit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diantara120-80mmHgDan140-90mmHg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diantara18-45Tahun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diantara60-100BPM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diatas100BPM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diatas140-90mmHg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diatas1700Kalori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diatas2600Kalori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diatas45Tahun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dibawah120-80mmHg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dibawah1700Kalori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dibawah18Tahun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dibawah2600Kalori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dibawah60BPM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JalanSantai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jogging"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JumpingJacks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kecepatan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kekuatan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Keseimbangan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ketahanan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LatihanBeban"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManfaatEmosi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManfaatExtensif"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManfaatKesehatanJantung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManfaatMental"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManfaatSosial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManfaatSubstansial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maraton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MrX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtotBetis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtotBisep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtotDada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtotPaha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtotPerut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtotPunggung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OtotTrisep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PenurunanBeratBadan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PenyembuhanAsma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PenyembuhanMenopause"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PenyembuhanObesitas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PenyembuhanPenyakitJantung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perengangan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sprint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Squat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wanita"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Aerobik"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Tipe"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#mencapai"/>
+                <NamedIndividual IRI="#PenyembuhanObesitas"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Anaerobik"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Tipe"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#mencapai"/>
+                <Class IRI="#MembangunOtot"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Aerobik"/>
+        <Class IRI="#Tipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aerobik"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mencapai"/>
+            <Class IRI="#Penyembuhan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anaerobik"/>
+        <Class IRI="#Tipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anaerobik"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mencapai"/>
+            <Class IRI="#MembangunOtot"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anaerobik"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#mencapai"/>
+            <NamedIndividual IRI="#Kecepatan"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Body"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DetakJantung"/>
+        <Class IRI="#Kondisi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intensitas"/>
+        <Class IRI="#Training"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JenisKelamin"/>
+        <Class IRI="#Kondisi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kondisi"/>
+        <Class IRI="#Body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KonsumsiKalori"/>
+        <Class IRI="#Kondisi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManfaatBagiTubuh"/>
+        <Class IRI="#Tujuan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MembangunOtot"/>
+        <Class IRI="#Tujuan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penyembuhan"/>
+        <Class IRI="#Tujuan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rendah"/>
+        <Class IRI="#Intensitas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rendah"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Dibawah1700Kalori"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Wanita"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Dibawah2600Kalori"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Pria"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rendah"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#ditentukanOleh"/>
+            <NamedIndividual IRI="#Diantara120-80mmHgDan140-90mmHg"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rendah"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#ditentukanOleh"/>
+            <NamedIndividual IRI="#Diatas45Tahun"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rendah"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#ditentukanOleh"/>
+            <NamedIndividual IRI="#Dibawah60BPM"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedang"/>
+        <Class IRI="#Intensitas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedang"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Diatas1700Kalori"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Wanita"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Diatas2600Kalori"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Pria"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedang"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#ditentukanOleh"/>
+            <NamedIndividual IRI="#Diantara120-80mmHgDan140-90mmHg"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedang"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#ditentukanOleh"/>
+            <NamedIndividual IRI="#Diantara18-45Tahun"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sedang"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#ditentukanOleh"/>
+            <NamedIndividual IRI="#Diantara60-100BPM"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TekananDarah"/>
+        <Class IRI="#Kondisi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tinggi"/>
+        <Class IRI="#Intensitas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tinggi"/>
+        <ObjectUnionOf>
+            <ObjectIntersectionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Diatas1700Kalori"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Wanita"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+            <ObjectIntersectionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Diatas2600Kalori"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#ditentukanOleh"/>
+                    <NamedIndividual IRI="#Pria"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tinggi"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#ditentukanOleh"/>
+                <NamedIndividual IRI="#Diantara18-45Tahun"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#ditentukanOleh"/>
+                <NamedIndividual IRI="#Dibawah18Tahun"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tinggi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#ditentukanOleh"/>
+            <NamedIndividual IRI="#Diantara120-80mmHgDan140-90mmHg"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tinggi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#ditentukanOleh"/>
+            <NamedIndividual IRI="#Diantara60-100BPM"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tinggi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#mencapai"/>
+            <NamedIndividual IRI="#Ketahanan"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tipe"/>
+        <Class IRI="#Training"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Training"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tujuan"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Umur"/>
+        <Class IRI="#Kondisi"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Aerobik"/>
+        <Class IRI="#Anaerobik"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Kondisi"/>
+        <Class IRI="#Training"/>
+        <Class IRI="#Tujuan"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Rendah"/>
+        <Class IRI="#Sedang"/>
+        <Class IRI="#Tinggi"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Aerobik"/>
+        <NamedIndividual IRI="#Berenang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rendah"/>
+        <NamedIndividual IRI="#Berenang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aerobik"/>
+        <NamedIndividual IRI="#Bersepeda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sedang"/>
+        <NamedIndividual IRI="#Bersepeda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tinggi"/>
+        <NamedIndividual IRI="#Burpees"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tinggi"/>
+        <NamedIndividual IRI="#CrossFit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TekananDarah"/>
+        <NamedIndividual IRI="#Diantara120-80mmHgDan140-90mmHg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Umur"/>
+        <NamedIndividual IRI="#Diantara18-45Tahun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DetakJantung"/>
+        <NamedIndividual IRI="#Diantara60-100BPM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DetakJantung"/>
+        <NamedIndividual IRI="#Diatas100BPM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TekananDarah"/>
+        <NamedIndividual IRI="#Diatas140-90mmHg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KonsumsiKalori"/>
+        <NamedIndividual IRI="#Diatas1700Kalori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KonsumsiKalori"/>
+        <NamedIndividual IRI="#Diatas2600Kalori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Umur"/>
+        <NamedIndividual IRI="#Diatas45Tahun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TekananDarah"/>
+        <NamedIndividual IRI="#Dibawah120-80mmHg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KonsumsiKalori"/>
+        <NamedIndividual IRI="#Dibawah1700Kalori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Umur"/>
+        <NamedIndividual IRI="#Dibawah18Tahun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KonsumsiKalori"/>
+        <NamedIndividual IRI="#Dibawah2600Kalori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DetakJantung"/>
+        <NamedIndividual IRI="#Dibawah60BPM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aerobik"/>
+        <NamedIndividual IRI="#JalanSantai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rendah"/>
+        <NamedIndividual IRI="#JalanSantai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aerobik"/>
+        <NamedIndividual IRI="#Jogging"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sedang"/>
+        <NamedIndividual IRI="#Jogging"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aerobik"/>
+        <NamedIndividual IRI="#JumpingJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tinggi"/>
+        <NamedIndividual IRI="#JumpingJacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tujuan"/>
+        <NamedIndividual IRI="#Kecepatan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tujuan"/>
+        <NamedIndividual IRI="#Kekuatan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tujuan"/>
+        <NamedIndividual IRI="#Keseimbangan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tujuan"/>
+        <NamedIndividual IRI="#Ketahanan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Anaerobik"/>
+        <NamedIndividual IRI="#LatihanBeban"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tinggi"/>
+        <NamedIndividual IRI="#LatihanBeban"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManfaatBagiTubuh"/>
+        <NamedIndividual IRI="#ManfaatEmosi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManfaatBagiTubuh"/>
+        <NamedIndividual IRI="#ManfaatExtensif"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManfaatBagiTubuh"/>
+        <NamedIndividual IRI="#ManfaatKesehatanJantung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManfaatBagiTubuh"/>
+        <NamedIndividual IRI="#ManfaatMental"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManfaatBagiTubuh"/>
+        <NamedIndividual IRI="#ManfaatSosial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManfaatBagiTubuh"/>
+        <NamedIndividual IRI="#ManfaatSubstansial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aerobik"/>
+        <NamedIndividual IRI="#Maraton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tinggi"/>
+        <NamedIndividual IRI="#Maraton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MembangunOtot"/>
+        <NamedIndividual IRI="#OtotBetis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MembangunOtot"/>
+        <NamedIndividual IRI="#OtotBisep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MembangunOtot"/>
+        <NamedIndividual IRI="#OtotDada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MembangunOtot"/>
+        <NamedIndividual IRI="#OtotPaha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MembangunOtot"/>
+        <NamedIndividual IRI="#OtotPerut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MembangunOtot"/>
+        <NamedIndividual IRI="#OtotPunggung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MembangunOtot"/>
+        <NamedIndividual IRI="#OtotTrisep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tujuan"/>
+        <NamedIndividual IRI="#PenurunanBeratBadan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Penyembuhan"/>
+        <NamedIndividual IRI="#PenyembuhanAsma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Penyembuhan"/>
+        <NamedIndividual IRI="#PenyembuhanMenopause"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Penyembuhan"/>
+        <NamedIndividual IRI="#PenyembuhanObesitas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Penyembuhan"/>
+        <NamedIndividual IRI="#PenyembuhanPenyakitJantung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rendah"/>
+        <NamedIndividual IRI="#Perengangan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JenisKelamin"/>
+        <NamedIndividual IRI="#Pria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Anaerobik"/>
+        <NamedIndividual IRI="#Sprint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tinggi"/>
+        <NamedIndividual IRI="#Sprint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tinggi"/>
+        <NamedIndividual IRI="#Squat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JenisKelamin"/>
+        <NamedIndividual IRI="#Wanita"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ditentukanOleh"/>
+        <NamedIndividual IRI="#MrX"/>
+        <NamedIndividual IRI="#Diantara18-45Tahun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ditentukanOleh"/>
+        <NamedIndividual IRI="#MrX"/>
+        <NamedIndividual IRI="#Pria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ditentukanOleh"/>
+        <NamedIndividual IRI="#MrX"/>
+        <NamedIndividual IRI="#Diantara120-80mmHgDan140-90mmHg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ditentukanOleh"/>
+        <NamedIndividual IRI="#MrX"/>
+        <NamedIndividual IRI="#Diantara60-100BPM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ditentukanOleh"/>
+        <NamedIndividual IRI="#MrX"/>
+        <NamedIndividual IRI="#Dibawah2600Kalori"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#mencapai"/>
+        <NamedIndividual IRI="#MrX"/>
+        <NamedIndividual IRI="#OtotDada"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#dicapaiDengan"/>
+        <ObjectProperty IRI="#mencapai"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#menentukan"/>
+        <ObjectProperty IRI="#ditentukanOleh"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dicapaiDengan"/>
+        <Class IRI="#Tujuan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ditentukanOleh"/>
+        <Class IRI="#Training"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#dicapaiDengan"/>
+        <Class IRI="#Training"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ditentukanOleh"/>
+        <Class IRI="#Body"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
