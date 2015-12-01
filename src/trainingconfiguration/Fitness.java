@@ -26,7 +26,7 @@ import java.util.Map;
  */
 public class Fitness {
    // 50000-14000 = 36000-13500 = 22500-15500 = 7000
-    private Fitness Collection;
+    private Fitness DataCollection;
     private Map<String, OWLNamedClass> Class = new HashMap<>();
     private Map<String, OWLObjectProperty> Property = new HashMap<>();
     private Map<String, OWLIndividual> Individual = new HashMap<>();
@@ -67,10 +67,10 @@ public class Fitness {
     }
     
     public Fitness getCollection() throws OntologyLoadException, FileNotFoundException{
-        if(Collection == null){
-            Collection = new Fitness();
+        if(DataCollection == null){
+            DataCollection = new Fitness();
         }
-        return Collection;
+        return DataCollection;
     }
     
     public ProtegeReasoner CreateOWLAPIReasoner(){
