@@ -56,6 +56,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isBMI -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isBMI"/>
+    
+
+
     <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isGender -->
 
     <ObjectProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isGender">
@@ -84,14 +90,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI -->
-
-    <DatatypeProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI">
-        <rdfs:range rdf:resource="&xsd;decimal"/>
-    </DatatypeProperty>
     
 
 
@@ -304,6 +302,14 @@
             </Class>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kondisi_Tubuh"/>
     </Class>
     
 
@@ -1290,17 +1296,8 @@
     <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan">
         <equivalentClass>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
-                <someValuesFrom>
-                    <rdfs:Datatype>
-                        <onDatatype rdf:resource="&xsd;decimal"/>
-                        <withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:maxExclusive rdf:datatype="&xsd;decimal">18</xsd:maxExclusive>
-                            </rdf:Description>
-                        </withRestrictions>
-                    </rdfs:Datatype>
-                </someValuesFrom>
+                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isBMI"/>
+                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_18"/>
             </Restriction>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
@@ -1312,36 +1309,10 @@
 
     <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan">
         <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <Restriction>
-                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="&xsd;decimal"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minInclusive rdf:datatype="&xsd;decimal">25</xsd:minInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="&xsd;decimal"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="&xsd;decimal">30</xsd:maxExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isBMI"/>
+                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Antara_25_30"/>
+            </Restriction>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
     </Class>
@@ -1535,17 +1506,8 @@
     <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas">
         <equivalentClass>
             <Restriction>
-                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
-                <someValuesFrom>
-                    <rdfs:Datatype>
-                        <onDatatype rdf:resource="&xsd;decimal"/>
-                        <withRestrictions rdf:parseType="Collection">
-                            <rdf:Description>
-                                <xsd:minExclusive rdf:datatype="&xsd;decimal">30</xsd:minExclusive>
-                            </rdf:Description>
-                        </withRestrictions>
-                    </rdfs:Datatype>
-                </someValuesFrom>
+                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isBMI"/>
+                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_30"/>
             </Restriction>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
@@ -1974,36 +1936,10 @@
 
     <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat">
         <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <Restriction>
-                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="&xsd;decimal"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minInclusive rdf:datatype="&xsd;decimal">18</xsd:minInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="&xsd;decimal"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="&xsd;decimal">25</xsd:maxExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isBMI"/>
+                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Antara_18_25"/>
+            </Restriction>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
     </Class>
@@ -2861,6 +2797,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Antara_18_25 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Antara_18_25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Antara_25_30 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Antara_25_30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
+    </NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym -->
 
     <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym">
@@ -2869,10 +2821,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_18 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
+    </NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Laki-Laki -->
 
     <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Laki-Laki">
         <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jenis_Kelamin"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_30 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
     </NamedIndividual>
     
 
