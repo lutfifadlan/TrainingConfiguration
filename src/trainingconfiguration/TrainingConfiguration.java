@@ -24,7 +24,7 @@ public class TrainingConfiguration {
         Fitness fit = new Fitness();
         fit.getCollection();
         fit.CreateOWLAPIReasoner();
-        fit.testConclude();
+        fit.testConclude(22, Fitness.KeaktifanOlahraga.tidakAktif, Fitness.Tujuan.menjagaKebugaran, Fitness.Lokasi.rumah, Fitness.Penyakit.tidakAda, Fitness.Gender.pria);
         System.out.println("blay");
         
     }
