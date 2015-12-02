@@ -35,17 +35,24 @@ public class Fitness {
     private Map<String, OWLObjectProperty> Property = new HashMap<>();
     private Map<String, OWLIndividual> Individual = new HashMap<>();
     private JenaOWLModel owlModel;
-    private static final String IRI = "http://www.semanticweb.org/fahziar/ontologies/2015/10/fitness#";
-    private static final String OWL = "transportation.owl";
+    private static final String IRI = "http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#";
+    private static final String OWL = "fitnessRdf.owl";
     private static final String[] Classes = {
-        "Training", "Intensitas"
+        "Kondisi_Tubuh", "Jenis_Kelamin", "Penyakit",
+        "Level", "Advance", "Beginner ", "Moderate",
+        "Location",
+        "Training", "Renang",
+        "Tujuan",
+        "Type", "Kurang_Berat_Badan", "Lebih_Berat_Badan", "Obesitas", "Sehat"
     };
     private static final String[] Properties = {
-        "hasTime", "hasBeban"
+        "atLocation", "hasDisease", "hasGoal", "isGender",
+
     };
     private static final String[] Individuals = {
-        "Sebentar", "Lama", // Waktu
-        "Ringan", "Menengah", "Berat" // Beban
+        "Laki-Laki", "Perempuan", //Jenis kelamin
+        "Gym", "Luar_Ruangan", "Rumah", //Location
+        "Memperbesar_Otot", "Meningkatkan_Stamina", "Menjaga_Kebugaran", "Menurunkan_Berat_Badan" //Tujuan
     };
     
     public Fitness() throws ProtegeReasonerException{
@@ -119,13 +126,13 @@ public class Fitness {
     }
     
     public List<String> testConclude() throws ProtegeReasonerException{
-        String namaKelas = "Latihan";
+        String namaKelas = "Penyakit";
         ProtegeReasoner reasoner = CreateOWLAPIReasoner();
         OWLNamedClass kelas = Class.get(("Training"));
         OWLIndividual kls = kelas.createOWLIndividual(namaKelas);
         System.out.println("Melakukan inferensi dari" + namaKelas);
-        kls.addPropertyValue(Property.get("hasTime"), Individual.get("Sebentar"));
-        kls.addPropertyValue(Property.get("hasBeban"), Individual.get("Ringan"));
+        kls.addPropertyValue(Property.get("atLocation"), Individual.get("Rumah"));
+        kls.addPropertyValue(Property.get("isGender"), Individual.get("Laki-Laki"));
         Collection inferredSuperClasses;
         List<String> tipes = new ArrayList<>();
         inferredSuperClasses = reasoner.getIndividualTypes(kls);
