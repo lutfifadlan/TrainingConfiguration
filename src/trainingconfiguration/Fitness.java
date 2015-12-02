@@ -36,23 +36,53 @@ public class Fitness {
     private Map<String, OWLIndividual> Individual = new HashMap<>();
     private JenaOWLModel owlModel;
     private static final String IRI = "http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#";
-    private static final String OWL = "fitnessRdf.owl";
+    private static final String OWL = "fitnessOntology.owl";
     private static final String[] Classes = {
+        "Keaktifan",
         "Kondisi_Tubuh", "Jenis_Kelamin", "Penyakit",
-        "Level", "Advance", "Beginner ", "Moderate",
+        "Level", "Advance", "Beginner", "Intermediate",
+        //Advance
+        "Bench_Press", "Biceps_Curls", "Cable_Crossover", "Dumbbell_Files", "Dummbell_Shrugs",
+        "Flat_Abs_Crunches", "Kickboxing", "Lower_Back_Machine", "Lying_Hamstring_Curls", "Machine_Squats",
+        "Military_Press", "Pilates", "Seated_Calf_Presses", "Shadow_Boxing", "Tricep_Kickbacks",
+        "Twisting_Abs_Machine",
+        //Beginner
+        "Ball_Workouts", "Trampolining", "Walking", "Wall_Sit",
+        //Intermediate
+        "Aqua_Aerobics", "Aqua_Jogging", "Cycling", "Elliptical_Machine", "Jumping_Rope",
         "Location",
-        "Training", "Renang",
-        "Tujuan",
-        "Type", "Kurang_Berat_Badan", "Lebih_Berat_Badan", "Obesitas", "Sehat"
+        "Training", "Time_10", "Time_20", "Time_40", "Time 60", "Time 120",
+        //Time_10
+        "Cable_Abs_Crunches", "Deadlift", "Dumbbell_Lift", "Jumping_Jack", "Leg_Extension",
+        "Plank", "Pull_Downs", "Pull_Ups", "Push_Ups", "Seated_Rows",
+        "Sit_Ups", "Skipping", "Squat", "Stair_Stepper", "Trampolining", 
+        "Tricep_Kickbacks", "Triceps_Pushdowns", "Tuck_Jump",
+        //Time_20
+        "Aerobic_Program", "Back_Ups", "Cross_Trainers", "Shadow_Boxing", "Treadmill",
+        //Time_40
+        "Baseball", "Biking", "Dance", "Jogging", "Kickboxing",
+        "Running", "Voleyball",
+        //Time_60
+        "Basketball", "Pilates", "Rowing", "Swimming", "Tai_Chi", "Yoga",
+        //Time_120
+        "Hiking", "Soccer",
+        "Tujuan", "Type",
+        "Kurang_Berat_Badan", "Lebih_Berat_Badan", "Obesitas", "Sehat"
     };
     private static final String[] Properties = {
-        "atLocation", "hasDisease", "hasGoal", "isGender",
-
+        "atLocation", "hasDisease", "hasGoal", "isGender", "isLevel", "isType"
     };
     private static final String[] Individuals = {
-        "Laki-Laki", "Perempuan", //Jenis kelamin
-        "Gym", "Luar_Ruangan", "Rumah", //Location
-        "Memperbesar_Otot", "Meningkatkan_Stamina", "Menjaga_Kebugaran", "Menurunkan_Berat_Badan" //Tujuan
+        //Keaktifan
+        "Aktif_Dalam_3_Bulan_Terakhir", "Aktif_Dalam_6_Bulan_Terakhir", "Tidak_Aktif_Dalam_3_Bulan_Terakhir", 
+        //Jenis_Kelamin
+        "Laki-Laki", "Perempuan",
+        //Penyakit
+        "Penyakit_Jantung", "Penyakit_Paru_Paru", "Penyakit_Punggung", "Tidak_Ada_Penyakit",
+        //Location
+        "Gym", "Luar_Ruangan", "Rumah",
+        //Tujuan
+        "Memperbesar_Otot", "Meningkatkan_Stamina", "Menjaga_Kebugaran", "Menurunkan_Berat_Badan" 
     };
     
     public Fitness() throws ProtegeReasonerException{
