@@ -1,0 +1,2978 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isActive -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isActive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isGender -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isGender">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isLevel -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isType -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI">
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Umur -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Umur">
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Waktu -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Waktu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aerobic_Program"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aqua_Aerobics"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aqua_Jogging"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Back_Ups"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Ball_Workouts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Baseball"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Basketball"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Bench_Press"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Biceps_Curls"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Biking"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cable_Abs_Crunches"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cable_Crossover"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cross_Trainers"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cycling"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Deadlift"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dumbbell_Flies"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dumbbell_Shrugs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dumbell_Lift"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Elliptical_Machine"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Flat_Abs_Crunches"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Hiking"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jogging"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jumping_Jack"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jumping_Rope"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kickboxing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Leg_Extension"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lower_Back_Machine"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lying_Hamstring_Curls"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Machine_Squats"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Military_Press"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Pilates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Plank"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Pull_Downs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Pull_Ups"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Push_Ups"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rowing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Running"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Seated_Calf_Presses"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Seated_Rows"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Shadow_Boxing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sit_Ups"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Skipping"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Soccer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Squat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Stair_Stepper"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Swimming"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tai_Chi"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Trampolining"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Treadmill"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tricep_Kickbacks"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Triceps_Pushdowns"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tuck_Jump"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Twisting_Abs_Machine"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Volleyball"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Walking"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Wall_Sit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Yoga"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isActive"/>
+                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aktif_Dalam_6_Bulan_Terakhir"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Level"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aerobic_Program -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aerobic_Program">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aqua_Aerobics -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aqua_Aerobics">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aqua_Jogging -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aqua_Jogging">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Back_Ups -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Back_Ups">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Ball_Workouts -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Ball_Workouts">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Baseball -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Baseball">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Basketball -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Basketball">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isActive"/>
+                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Aktif_Dalam_3_Bulan_Terakhir"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Level"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Bench_Press -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Bench_Press">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Biceps_Curls -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Biceps_Curls">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Biking -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Biking">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cable_Abs_Crunches -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cable_Abs_Crunches">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cable_Crossover -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cable_Crossover">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cross_Trainers -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cross_Trainers">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cycling -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Cycling">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dance -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dance">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Deadlift -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Deadlift">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dumbbell_Flies -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dumbbell_Flies">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dumbbell_Shrugs -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dumbbell_Shrugs">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dumbell_Lift -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Dumbell_Lift">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Punggung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Elliptical_Machine -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Elliptical_Machine">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Flat_Abs_Crunches -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Flat_Abs_Crunches">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Hiking -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Hiking">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_120"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isActive"/>
+                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aktif_Dalam_3_Bulan_Terakhir"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Level"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jenis_Kelamin -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jenis_Kelamin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kondisi_Tubuh"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jogging -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jogging">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jumping_Jack -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jumping_Jack">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jumping_Rope -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jumping_Rope">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Keaktifan -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Keaktifan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kickboxing -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kickboxing">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kondisi_Tubuh -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kondisi_Tubuh"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
+                <someValuesFrom>
+                    <rdfs:Datatype>
+                        <onDatatype rdf:resource="&xsd;decimal"/>
+                        <withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="&xsd;decimal">18</xsd:maxExclusive>
+                            </rdf:Description>
+                        </withRestrictions>
+                    </rdfs:Datatype>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
+                        <someValuesFrom>
+                            <rdfs:Datatype>
+                                <onDatatype rdf:resource="&xsd;decimal"/>
+                                <withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="&xsd;decimal">25</xsd:minInclusive>
+                                    </rdf:Description>
+                                </withRestrictions>
+                            </rdfs:Datatype>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
+                        <someValuesFrom>
+                            <rdfs:Datatype>
+                                <onDatatype rdf:resource="&xsd;decimal"/>
+                                <withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="&xsd;decimal">30</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </withRestrictions>
+                            </rdfs:Datatype>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Leg_Extension -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Leg_Extension">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Punggung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Level -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Level"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lower_Back_Machine -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lower_Back_Machine">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lying_Hamstring_Curls -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lying_Hamstring_Curls">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Punggung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Machine_Squats -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Machine_Squats">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Military_Press -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Military_Press">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
+                <someValuesFrom>
+                    <rdfs:Datatype>
+                        <onDatatype rdf:resource="&xsd;decimal"/>
+                        <withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="&xsd;decimal">30</xsd:minExclusive>
+                            </rdf:Description>
+                        </withRestrictions>
+                    </rdfs:Datatype>
+                </someValuesFrom>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kondisi_Tubuh"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Pilates -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Pilates">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Punggung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Plank -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Plank">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Punggung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Pull_Downs -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Pull_Downs">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Pull_Ups -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Pull_Ups">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Push_Ups -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Push_Ups">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rowing -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rowing">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Running -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Running">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Punggung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Seated_Calf_Presses -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Seated_Calf_Presses">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Seated_Rows -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Seated_Rows">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
+                        <someValuesFrom>
+                            <rdfs:Datatype>
+                                <onDatatype rdf:resource="&xsd;decimal"/>
+                                <withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="&xsd;decimal">18</xsd:minInclusive>
+                                    </rdf:Description>
+                                </withRestrictions>
+                            </rdfs:Datatype>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#BMI"/>
+                        <someValuesFrom>
+                            <rdfs:Datatype>
+                                <onDatatype rdf:resource="&xsd;decimal"/>
+                                <withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="&xsd;decimal">25</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </withRestrictions>
+                            </rdfs:Datatype>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Shadow_Boxing -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Shadow_Boxing">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sit_Ups -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sit_Ups">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Skipping -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Skipping">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Soccer -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Soccer">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_120"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Squat -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Squat">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Stair_Stepper -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Stair_Stepper">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Swimming -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Swimming">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tai_Chi -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tai_Chi">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10 -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Training"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_120 -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_120">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Training"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20 -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Training"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40 -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Training"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60 -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Training"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Training -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Training"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Trampolining -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Trampolining">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Treadmill -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Treadmill">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isLevel"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Level"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#isType"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tricep_Kickbacks -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tricep_Kickbacks">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Triceps_Pushdowns -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Triceps_Pushdowns">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tuck_Jump -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tuck_Jump">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Twisting_Abs_Machine -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Twisting_Abs_Machine">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_20"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Volleyball -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Volleyball">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Walking -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Walking">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Obesitas"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_40"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Wall_Sit -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Wall_Sit">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Beginner"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Punggung"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                        <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Yoga -->
+
+    <Class rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Yoga">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Advance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Intermediate"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Kurang_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Lebih_Berat_Badan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Sehat"/>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#atLocation"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasGoal"/>
+                                <hasValue rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#hasDisease"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Time_60"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aktif_Dalam_3_Bulan_Terakhir -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aktif_Dalam_3_Bulan_Terakhir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Keaktifan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aktif_Dalam_6_Bulan_Terakhir -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Aktif_Dalam_6_Bulan_Terakhir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Keaktifan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Gym">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Laki-Laki -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Laki-Laki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jenis_Kelamin"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Luar_Ruangan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Memperbesar_Otot -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Memperbesar_Otot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Meningkatkan_Stamina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menjaga_Kebugaran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Menurunkan_Berat_Badan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tujuan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Jantung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Paru_Paru">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Punggung -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit_Punggung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Perempuan -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Perempuan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Jenis_Kelamin"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Rumah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Location"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Ada_Penyakit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Penyakit"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Aktif_Dalam_3_Bulan_Terakhir -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Tidak_Aktif_Dalam_3_Bulan_Terakhir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/windyamelia/ontologies/2015/11/fitnessOntology#Keaktifan"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
