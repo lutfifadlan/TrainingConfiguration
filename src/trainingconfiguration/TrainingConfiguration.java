@@ -21,6 +21,8 @@ public class TrainingConfiguration {
      */
     public static void main(String[] args) throws OntologyLoadException, FileNotFoundException, ProtegeReasonerException {
         // TODO code application logic here
+        JFrame jf = new JFrame();
+      //  jf.setVisible(true);
         Fitness fit = new Fitness();
         fit.getCollection();
         fit.CreateOWLAPIReasoner();
