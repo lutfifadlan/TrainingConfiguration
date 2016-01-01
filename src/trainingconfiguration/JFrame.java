@@ -447,7 +447,7 @@ public class JFrame extends javax.swing.JFrame {
         Map <String, Integer> result = Util.configure(bmi, fKeatifan, fTujuan, fLokasi, fPenyakit, fGender, Integer.parseInt(waktu));
         String display = "";
         for (String key : result.keySet()){
-            display = display + key + " ";
+            display = display + key + "\n";
         }
         jTextArea1.setText(display);
         
